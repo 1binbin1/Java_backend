@@ -478,6 +478,8 @@ public class EmployeeController{
 
 ##### 3）创建接口EmployeeService
 
+可以继承父类 IService
+
 ```java 
 public interface EmployeeService{
     PageInfo<Employee> getEmployeeList(Integer pageNum);
@@ -487,6 +489,8 @@ public interface EmployeeService{
 
 
 ##### 4）创建实现类EmployeeServiceImpl
+
+可以继承实现父类 ServiceImpl<Mappeer,pojo>
 
 ```java
 @Service
